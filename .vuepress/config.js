@@ -1,6 +1,8 @@
 module.exports = {
     title: 'Knowledge' + 'Base',
     base: '/learn/',
+	// 输出目录 默认值: .vuepress/dist
+	dest: '.docs',
     description: 'Learning knowledge, fast people step!',
     markdown: {
         lineNumbers: true
@@ -58,7 +60,7 @@ module.exports = {
             // }
         },
         // 假定是 GitHub. 同时也可以是一个完整的 GitLab URL
-        repo: 'pingxi/learn',
+        repo: 'souwind/learn',
         // 自定义仓库链接文字。默认从 `themeConfig.repo` 中自动推断为
         // "GitHub"/"GitLab"/"Bitbucket" 其中之一，或是 "Source"。
         repoLabel: 'source',
