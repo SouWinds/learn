@@ -17,7 +17,7 @@ module.exports = {
     },
     base: '/learn/',
 	// 输出目录 默认值: .vuepress/dist
-	dest: '.docs',
+	dest: 'docs',
     markdown: {
         lineNumbers: true
     },
