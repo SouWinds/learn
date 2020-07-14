@@ -1,17 +1,11 @@
-欢迎来访快点网络科技
-
-快点网络科技，是一个生命力极强的团队。“超级无敌大团队”
+欢迎来访SouWind(南风)的博客
 
 ---
 
-## LOGO from Kuaidian
+## 导航
+[JavaScript](./JavaScript)
 
-| 图标          | 名称           |
-| ------------- |:-------------:|
-|  <img src="https://pingxi.github.io/learn/hero.png" width = "200" height = "200" alt="图片名称" align=center />  | 快点网络科技技术文档平台LOGO |
-| <img src="https://pingxi.github.io/learn/kuaidian.png" width = "200" height = "200" alt="图片名称" align=center /> | 快点网络科技LOGO |
-| <img src="https://pingxi.github.io/learn/edu.png" width = "200" height = "200" alt="图片名称" align=center />  | 快点教育LOGO |
-| <img src="https://pingxi.github.io/learn/few.png" width = "200"  alt="图片名称" align=center />  | 快点教育LOGO |
+
 
 ## 技术栈
 

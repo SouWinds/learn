@@ -1,6 +1,9 @@
 {
     "scripts": {
       "docs:dev": "vuepress dev docs",
-      "docs:build": "vuepress build docs"
+      "docs:build": "vuepress build docs",
+      "start": "vuepress dev .  --temp .temp",
+      "build": "vuepress build . && ggp",
+      "ggp": "git add . && git commit -am 'update...' && git push"
     }
   }

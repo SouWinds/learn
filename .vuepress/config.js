@@ -1,48 +1,65 @@
 module.exports = {
-    title: 'Knowledge' + 'Base',
+    locales: {
+        // 键名是该语言所属的子路径
+        // 作为特例，默认语言可以使用 '/' 作为其路径。
+        '/': {
+            lang: 'en-US', // 将会被设置为 <html> 的 lang 属性
+            title: 'Knowledge' + 'Base',
+            description: 'Learning knowledge, fast people step!',
+            selectText: 'Languages',
+        },
+        '/zh/': {
+            lang: 'zh-CN',
+            title: '知识库',
+            description: '学知识，快人一步！',
+            selectText: '语言',
+        }
+    },
     base: '/learn/',
 	// 输出目录 默认值: .vuepress/dist
 	dest: '.docs',
-    description: 'Learning knowledge, fast people step!',
     markdown: {
         lineNumbers: true
     },
     themeConfig: {
         nav: [
             { text: 'index', link: '/' },
-			{ text: '景院人', items: [
-			    { text: '景院裹裹',link: '/zh/guide/JYPeople/miniGuoGuo' },
-			] },
-            { text: 'English', items: [
-                { text: 'personal summary',link: '/zh/guide/english/' },
-				{ text: 'vocabulary',link: '/zh/guide/english/vocabulary' }
-            ] },
-            { text: 'Node.js', items: [
-                { text: 'personal summary',link: '/zh/guide/nodejs/summary' },
-                { text: 'Demo', items: [
-					{ text: '景院服务助手', link: '/zh/guide/JDZ/JDZ' },
-                    { text: 'nodejs创建项目', link: '/zh/guide/nodejs/' },
-                    { text: '有道精品课链接分析Demo', link: '/zh/guide/nodejs/youdao' }
-                ] },
-                { text: 'Bank', items: [
-                    { text: 'node.js官方文档', link: 'http://nodejs.cn/latest-api/' }
-                ] }
+            { text: 'note', link: '/zh/note', items: [
+                { text: 'JavaScript', link: '/zh/note/Javascript'},
+            ]},
+			// { text: '景院人', items: [
+			//     { text: '景院裹裹',link: '/zh/guide/JYPeople/miniGuoGuo' },
+			// ] },
+            // { text: 'English', items: [
+            //     { text: 'personal summary',link: '/zh/guide/english/' },
+			// 	{ text: 'vocabulary',link: '/zh/guide/english/vocabulary' }
+            // ] },
+            // { text: 'Node.js', items: [
+            //     { text: 'personal summary',link: '/zh/guide/nodejs/summary' },
+            //     { text: 'Demo', items: [
+			// 		{ text: '景院服务助手', link: '/zh/guide/JDZ/JDZ' },
+            //         { text: 'nodejs创建项目', link: '/zh/guide/nodejs/' },
+            //         { text: '有道精品课链接分析Demo', link: '/zh/guide/nodejs/youdao' }
+            //     ] },
+            //     { text: 'Bank', items: [
+            //         { text: 'node.js官方文档', link: 'http://nodejs.cn/latest-api/' }
+            //     ] }
 
-            ] },
-            { text: 'Vue.js', items: [
-                { text: 'personal summary',link: '/zh/guide/vuejs/' },
-				{ text: 'Demo', items: [
-				    { text: 'EduCat', link: '/zh/guide/vuejs/2' }
-				] },
-                { text: 'Bank', items: [
-                    { text: 'Vue.js官方文档', link: 'https://cn.vuejs.org/v2/guide/' }
-                ] }
-            ] },
-			{ text: 'Network', items: [
-			    { text: 'OSPF',link: '/zh/guide/network/' },
-			    { text: 'HCIA培训',link: '/zh/guide/network/HCIA' },
-			] },
-            { text: 'google', link: 'https://google.com' },
+            // ] },
+            // { text: 'Vue.js', items: [
+            //     { text: 'personal summary',link: '/zh/guide/vuejs/' },
+			// 	{ text: 'Demo', items: [
+			// 	    { text: 'EduCat', link: '/zh/guide/vuejs/2' }
+			// 	] },
+            //     { text: 'Bank', items: [
+            //         { text: 'Vue.js官方文档', link: 'https://cn.vuejs.org/v2/guide/' }
+            //     ] }
+            // ] },
+			// { text: 'Network', items: [
+			//     { text: 'OSPF',link: '/zh/guide/network/' },
+			//     { text: 'HCIA培训',link: '/zh/guide/network/HCIA' },
+			// ] },
+            // { text: 'google', link: 'https://google.com' },
         ],
         sidebar: [
             '/',
