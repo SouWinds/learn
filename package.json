@@ -3,7 +3,7 @@
       "docs:dev": "vuepress dev docs",
       "docs:build": "vuepress build docs && npm run ggp",
       "start": "vuepress dev .  --temp .temp",
-      "build": "vuepress build . && npm run ggp",
+      "build": "vuepress docs:build && npm run ggp",
       "ggp": "git add . && git commit -am 'update...' && git push"
     }
   }
